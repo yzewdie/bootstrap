@@ -21,7 +21,7 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row">
-                
+
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
                     <img src="img/logo.png" class="img-fluid" />
                 </div>
@@ -30,7 +30,9 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div>
-                    <a class="btn btn-secondary bg-info text-white" href="#reserveForm" role="button" data-html="true" data-placement="bottom" data-toggle="tooltip" title="or call us on <strong>555-555-5555</strong>">Reserve
+                    <a class="btn btn-secondary bg-info text-white" href="#reserveForm" role="button" data-html="true"
+                        data-placement="bottom" data-toggle="tooltip"
+                        title="or call us on <strong>555-555-5555</strong>">Reserve
                         Campsite</a>
                 </div>
             </div>
@@ -54,10 +56,52 @@
                         <li class="nav-item"><a class="nav-link" href="contactus.html"><i
                                     class="fa fa-address-card fa-lg"></i> Contact</a></li>
                     </ul>
+                    <span class="navbar-text ml-auto">
+                        <a role="button" data-toggle="modal" data-target="#loginModal">
+                            <i class="fa fa-sign-in"></i> Login
+                        </a>
+
+                    </span>
                 </div>
             </button>
         </div>
     </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Login</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form action="">
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label class="sr-only" for="longinEmail">Email Address</label>
+                                <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Enter password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me</label>
+                                    </div>
+                        </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <div class="container">
         <div class="row row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
@@ -185,11 +229,11 @@
         </script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    
+
         <script>
-             $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
         </script>
 </body>
 
